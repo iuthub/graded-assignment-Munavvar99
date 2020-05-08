@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background: radial-gradient(ellipse at right, #833ab4, transparent),
+            radial-gradient(ellipse at left, #fd1d1d, transparent);
+}
+#my-container{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 100%;
+    max-width: 40rem;
+    background-color: #fff;
+    position: relative;
+    padding: 10rem 0;
+    box-shadow: 0 5px 1.5rem rgba(0,0,0,0.1);
+    border-radius: 2rem;
+    z-index: 1;
+    height: 75%;
+}
+.form::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30rem;
+    background: linear-gradient(to left,#833ab4,#fd1d1d);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    z-index: -1; 
+}
+.form-heading{
+    color: #fff;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 10rem;
+}
+form{
+    transform: translateX(10rem);
+    padding: 2rem 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1px 1.5rem rgba(0,0,0,0.1);
+}
+.input-group{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+.input-group input{
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: .5rem;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    color: #833ab4;
+}
+.input-group > i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #833ab4;
+}
+.input-group .bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+    height: 1px;
+}
+.input-group .bar::before{
+    content: '';
+    position: absolute;
+    background-color: #833ab4;
+    width: 0;
+    height: 2px;
+    transition: width 650ms;
+}
+.input-group input:focus+ .bar::before{
+    width: 100%;
+}
+.input-group button{
+    margin: 3rem auto;
+    padding: 1rem 5 rem;
+    background: linear-gradient(to left, #833ab4,#fd1d1d);
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+.input-group button:focus,
+.input-group button:hover{
+    background: linear-gradient(to right, #833ab4,#fd1d1d);
+}
+.toLogin{
+    text-align: center;
+}
+.toLogin a{
+    text-decoration: none;
+    color: #a1a1a1;
+    font-size: 1.5rem;
+}
+.toLogin a span{
+    color: #833ab4;
+}
+.toLogin a span :hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #833ab4;
+}
+@media screen and (max-width: 700px){
+   .form::before{
+       height: 10rem;
+   }
+   .form-heading{
+       left: 50%;
+       transform: translateX(-50%);
+   }
+   form{
+       border-radius: initial;
+       transform: initial;
+       box-shadow: none;
+   } 
+}
+.input-group button{
+    width: 80vw;
+}
+.card-header{
+    background: linear-gradient(to left,#833ab4,#fd1d1d);
+}

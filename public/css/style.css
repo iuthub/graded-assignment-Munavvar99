@@ -1,0 +1,88 @@
+body{
+    background: #fff;
+    font-family: 'Roboto',sans-serif;
+}
+.card-header{
+    background: linear-gradient(to left,#833ab4,#fd1d1d);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    text-align: center;
+    color: #fff;
+    
+}
+.card{
+    border-top-color: #833ab4;
+    border-left-color: #fd1d1d;;
+    border-right-color: #833ab4;
+    border-bottom-color: #fd1d1d;
+}
+.auth{
+    margin-top: 120px;
+    border-left-color: #fd1d1d;;
+    border-right-color: #833ab4;
+    border-bottom-color: #fd1d1d;
+}
+.btn-primary:focus,
+.btn-primary:hover{
+    background: linear-gradient(to right, #833ab4,#fd1d1d);
+}
+.btn-primary{
+    background: linear-gradient(to left, #833ab4,#fd1d1d);
+    border: none;
+}
+.navbar-laravel{
+    background: #fff;
+    box-shadow: 0.5px 0.5px 50px rgb(54, 53, 53);
+    
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    transition: transform 0.3s;
+}
+.navbar-brand:hover {
+    transform: scale(1.05); 
+  }
+.textname
+{
+    position:absolute;
+    top:40%;
+}
+.motto{
+    position: absolute;
+    top:70%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: linear-gradient(to left, #833ab4,#fd1d1d);;
+}
+.text{
+    font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    text-shadow: 2px 2px rgba(59, 56, 56, 0.171);
+}
+
+@media screen and (max-width: 768px){
+    .col-sm-4{
+        display: none;
+    }
+}
+
+.text-reg{
+    font-family: 'Pacifico', cursive;
+}
+#searchResults{
+    background-color: #fff;
+    text-align:left;
+    background-color: white;
+    border-radius:5px;
+    color:black;
+    
+}
+#priceDiv select{
+    margin-top: 8px;
+}
+#fieldgroup{
+    margin-bottom: 0px;
+}
